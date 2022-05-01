@@ -1,0 +1,344 @@
+/* global design  */
+* {
+    box-sizing: border-box;
+
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Montserrat";
+}
+
+.container {
+    padding: 3% 15%;
+}
+
+
+/* nav  */
+nav {
+    background-color: black;
+
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.nav h1 {
+    color: #fff;
+    font-size: 100px;
+    
+}
+
+.nav h2 {
+    color: #fff;
+    font-size: 50px;
+    font-weight: normal;
+}
+
+.nav img {
+    width: 100px;
+    padding: 10px;
+}
+
+/* nav media query */
+
+@media (max-width:768px) {
+    .nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .nav h1 {
+        font-size: 50px;
+    }
+    .nav h2 {
+        font-size: 25px;
+    }
+
+}
+
+/* hero  */
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+    margin-top: 50px;
+}
+
+.hero img {
+    width: 400px;
+    height: 400px;
+    border: 50px 50px 20px 0 black;
+    border-style: outset;
+}
+
+
+.hero h1 {
+    font-size: 80px;
+    font-weight: normal;
+}
+
+.hero span {
+    font-weight: bold;
+    display: block;
+    font-size: 100px;
+}
+
+/* media query */
+
+@media (max-width : 768px) {
+    .hero {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero h1 {
+        display: block;
+        font-size: 40px;
+    }
+    .hero span {
+        font-weight: bold;
+        display: block;
+        font-size: 80px;
+    }
+    
+
+    .hero img {
+        display: block;
+    }
+}
+
+/* producs */
+
+.products {
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.products h2 {
+    font-size: 50px;
+}
+
+.iconsh1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black; 
+    border-radius: 15px;
+    margin: 0 0 50px;
+    width: 600px;
+    height: 150px;
+}
+.iconsh1 h1{
+    color: #fff;
+    font-size: 50px;
+}
+
+.iconsh1 img{
+    width: 100px;
+}
+.iimg{
+    width: 737px;
+    height: 491px;
+    border-radius: 50px;
+}
+
+
+/* media query */
+
+@media (max-width : 768px) {
+    .products {
+        display: grid;
+        place-items: center;
+    }
+    .iconsh1{
+        width: 300px;
+        height: 75px;
+    }
+    .iconsh1 h1{
+        color: #fff;
+        /* padding: 25px; */
+        font-size: 25px;
+    }
+    .iconsh1 img{
+        width: 50px;
+    }
+    .products h2 {
+        font-size: 25px;
+    }
+    .iimg{
+        width: 368.5px;
+        height: 245.5px;
+        border-radius: 25px;
+        gap: 50px;
+    }
+}
+
+/* price */
+.price{
+    display: grid;
+    place-items: center;
+}
+
+.price h1{
+    font-size: 100px;
+    margin: 0 0 150px 0;
+    
+}
+.card{
+    /* margin: 100px auto; */
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+}
+
+
+.cards :nth-child(3){
+    margin: 0 auto;
+}
+.popup{
+    width: 250px;
+    height: 100px;
+    background-color: black;
+    border-radius: 20px;
+    position: relative;
+    top: -40px;
+    display: grid;
+    place-items: center;
+    /* margin-bottom: 30px; */
+}
+.popup h5{
+    font-size: 50px;
+    color: #fff;
+}
+/* .card :nth-of-type(2) */
+
+.card {
+    width: 400px;
+    height: 500px;
+    border: 5px;
+    border-style:solid;
+    border-radius: 20px;
+    display: grid;
+    place-items: center;
+}
+.card h2{
+    margin-top: 30px;
+    font-size: 30px;
+}
+
+.card h3 {
+    font-size: 150px;
+    font-weight:bolder;
+}
+
+.card button{
+    margin-top: 80px;
+    padding: 20px 40px;
+    background-color: #fff;
+    color: #000;
+    border: 1px solid;
+    box-shadow: 6px 6px 10px #000;
+    font-size: 30px;
+    font-family: "Montserrat";
+    font-weight: bold;
+}
+.card button:hover{
+    background-color: #000;
+    color: #fff;
+    box-shadow: 0;
+    border: 0;
+    border-radius: 10px;
+}
+/* media query */
+
+@media (max-width : 768px){
+    .price{
+        text-align: center;
+        margin: 0 auto;
+    }
+    .price h1{
+        font-size: 50px;
+        margin: 40px;
+        
+    }
+    .cards{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 100px;
+    }
+    .cards{
+        margin: 0 auto;
+    }
+    .popup{
+        width: 150px;
+        height: 50px;
+        background-color: black;
+        border-radius: 10px;
+        position: relative;
+        top: -20px;
+        /* margin: 40px; */
+    }
+    .popup h5{
+        font-size: 30px;
+        color: #fff;
+    }
+    .card {
+        width: 300px;
+        height: 310px;
+        border: 2px;
+        border-style:solid;
+        border-radius: 10px;
+    }
+    .card h3 {
+        font-size: 100px;
+        font-weight:bolder;
+    }
+    .card h4 {
+        font-size: 20px;
+    }
+    .card button{
+        margin: 0;
+        padding: 10px 10px;
+        background-color: #fff;
+        color: #000;
+        border: 1px solid;
+        box-shadow: 6px 6px 10px #000;
+    }
+}
+
+footer{
+    background-color: #000;
+    margin-top: 100px;
+    color: #fff;
+    display: grid;
+    place-items: center;
+}
+
+footer h1 {
+    font-size: 20px;
+    font-weight: normal;
+}
